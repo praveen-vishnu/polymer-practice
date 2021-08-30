@@ -15,6 +15,7 @@ import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import '@polymer/polymer/lib/elements/dom-if.js';
 import '@polymer/paper-checkbox/paper-checkbox.js';
 import { setPassiveTouchGestures } from '@polymer/polymer/lib/utils/settings';
+import './first-element.js'
 
 class StartPolymer3 extends PolymerElement {
   static get properties () {
@@ -77,6 +78,7 @@ class StartPolymer3 extends PolymerElement {
         }
       </style>
 
+      <first-element></first-element>
       <h1>Start Polymer 3.0</h1>
       <p>[[message]]</p>
       <paper-checkbox id="omgpie"

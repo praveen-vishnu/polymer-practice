@@ -8,6 +8,7 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,29 +17,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="theme-color" content="#fff">
   <link rel="icon" href="manifest/favicon.ico">
   <link rel="manifest" href="manifest.json">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="canonical" href="https://start-polymer3.firebaseapp.com/" />
   <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" async></script>
-  <script src="./src/start-polymer3.js" type="module" async></script>
+  <script src="./src/my-app.js" type="module" async></script>
   <title>Start Polymer 3.0</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", "Noto", sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      background-color: #eeeeee;
+    }
+  </style>
 </head>
-<body>
-  <start-polymer3>
-    <!-- 
-      Placeholder Content: This content will be replaced when <start-polymer3>
-      is rendered.
-      
-      Placeholder content improves perceived render time and makes sure
-      users with JavaScript disabled will see something helpful.
-    -->
 
-    <h1>Start Polymer 3.0</h1>
-    <p id="jsyes"></p>
-    <script type="text/javascript">
-      document.getElementById('jsyes').innerHTML='Loading...'
-    </script>
-    <noscript>
-      <p>Could not render the custom element. Check that JavaScript is enabled.</p>
-    </noscript>
-  </start-polymer3>
+<body>
+  <my-app></my-app>
 </body>
+
 </html>
